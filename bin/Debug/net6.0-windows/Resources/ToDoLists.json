@@ -1,0 +1,29 @@
+[
+  {
+    "$type": "MyToDoList.Models.ToDoList, MyToDoList",
+    "Items": [
+      {
+        "$type": "MyToDoList.Models.ToDoItem, MyToDoList",
+        "IsCompleted": false,
+        "Text": "Mâncare la pisică"
+      },
+      {
+        "$type": "MyToDoList.Models.ToDoItem, MyToDoList",
+        "IsCompleted": false,
+        "Text": "Pâine"
+      }
+    ],
+    "Name": "Cumpăraturi"
+  },
+  {
+    "$type": "MyToDoList.Models.ToDoList, MyToDoList",
+    "Items": [
+      {
+        "$type": "MyToDoList.Models.ToDoItem, MyToDoList",
+        "IsCompleted": false,
+        "Text": "Descarcă muzică"
+      }
+    ],
+    "Name": "De făcut mai târziu"
+  }
+]

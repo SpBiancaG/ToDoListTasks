@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:MyToDoList"
         xmlns:dd="urn:gong-wpf-dragdrop"
         mc:Ignorable="d" 
-        FontFamily="{StaticResource BankGothic}"
+      
         FontSize="16" 
-        Title="MyToDoLists" Height="450" Width="800">
+        Height="450" Width="800">
     <Grid Background="#000000">
         <Grid.Resources>
-            
+
             <!--Style for completed tasks-->
             <Style x:Key="TaskNotification"
                    TargetType="Border">
@@ -23,7 +23,7 @@
                 </Style.Triggers>
 
             </Style>
-            
+
             <!--Style for listview grid-->
             <Style x:Key="ListViewGrid"
                    TargetType="ItemsControl">
@@ -78,7 +78,7 @@
             <Style x:Key="EditToggleButton"
                    BasedOn="{StaticResource HiddenButtons}" 
                    TargetType="ToggleButton">
-                <Setter Property="Foreground" Value="#FF535C6D"/>
+                <Setter Property="Foreground" Value="DarkGray"/>
             </Style>
 
             <!--Style for EditTextBox-->
@@ -111,64 +111,63 @@
 
         <!-- Lists here-->
 
-                    <DockPanel  Grid.Column="0" 
+        <DockPanel  Grid.Column="0" 
                     LastChildFill="True" >
 
-            <Label Background="#FF8B776E" 
-                   DockPanel.Dock="Top">My lists</Label>
-            <Button Background="#FF535C6D"
+            <Label Background="#FF0025E6" 
+                   DockPanel.Dock="Top" Content="My to do lists" HorizontalContentAlignment="Center" Foreground="White" FontFamily="Lucida Calligraphy" Height="32"/>
+            <Button Background="#FF8CB4FF"
                     DockPanel.Dock="Bottom"
-                    FontFamily="./resources/BankGothic Lt BT"
-                    Content="Add new List"
-                    Command="{Binding AddListCommand}"/>
-                <ListView ItemsSource="{Binding ToDoLists}" 
-                          SelectedItem="{Binding SelectedList}" 
-                          HorizontalAlignment="Stretch"
+                    FontFamily="Lucida Calligraphy"
+                    Content="New list"
+                    Command="{Binding AddListCommand}" Click="Button_Click" Foreground="White" BorderBrush="White" Height="40"/>
+            <ListView ItemsSource="{Binding ToDoLists}" 
+                          SelectedItem="{Binding SelectedList}"
                       dd:DragDrop.IsDragSource="True"
                       dd:DragDrop.IsDropTarget="True"
-                          Background="#FFD6CDBC">
-                    <ListView.ItemContainerStyle>
-                        <Style TargetType="ListViewItem">
+                          Background="#FF6EA4DD" Width="209" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListView_SelectionChanged" BorderBrush="White" FontFamily="Lucida Calligraphy" Foreground="White" FontSize="12">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" 
                                     Value="Stretch"/>
                         <Setter Property="Background" Value="Transparent"/>
                     </Style>
-                    </ListView.ItemContainerStyle>
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ItemsControl Style="{StaticResource ListViewGrid}">
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ItemsControl Style="{StaticResource ListViewGrid}">
                             <ItemsControl.Background>
-                                <SolidColorBrush Color="#FF8B776E"/>
+                                <SolidColorBrush Color="#FF007CFF"/>
                             </ItemsControl.Background>
-                                <Border BorderBrush="DimGray" 
+                            <Border BorderBrush="white" 
                                     BorderThickness="0"
-                                    Grid.Column="1" Background="#FF8B776E">
-                                    <Grid HorizontalAlignment="Stretch">
-                                        <TextBlock  Text="{Binding Path=Name}" 
+                                    Grid.Column="1" Background="#FF007CFF">
+                                <Grid HorizontalAlignment="Stretch">
+                                    <TextBlock  Text="{Binding Path=Name}" 
                                                 Padding="5,5,0,5 "
                                                 Margin="5,0,5,0"/>
-                                        <TextBox Style="{StaticResource EditTextBox}"
+                                    <TextBox Style="{StaticResource EditTextBox}"
                                              x:Name="EditTextBox"
                                              Text="{Binding Path=Name,UpdateSourceTrigger=PropertyChanged}"
                                              Margin="4,4,4,4"/>
-                                    </Grid>
-                                </Border>
+                                </Grid>
+                            </Border>
 
-                                <StackPanel Grid.Column="3" 
+                            <StackPanel Grid.Column="3" 
                                         Orientation="Horizontal">
-                                    <ToggleButton Content="Edit" 
+                                <ToggleButton Content="Edit" 
                                               Style="{StaticResource EditToggleButton}"
                                               x:Name="EditButton"/>
-                                    <Button Content="X"
+                                <Button Content="X"
                                         Style="{StaticResource RemoveButton}"
                                         Command="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}},Path=DataContext.RemoveListCommand}"/>
-                                </StackPanel>
+                            </StackPanel>
 
-                            </ItemsControl>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </DockPanel>
+                        </ItemsControl>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </DockPanel>
 
         <GridSplitter Grid.Column="1" 
                       ShowsPreview="False" 
@@ -184,18 +183,18 @@
                    Grid.Column="2">
             <Label Content="{Binding Name}" 
                    x:Name="CurrentListLabel" 
-                   Background="#FF8B776E" 
-                   DockPanel.Dock="Top" />
-            <Button Background="#FF535C6D" 
+                   Background="#FF0025E6" 
+                   DockPanel.Dock="Top" Height="32" Foreground="White" FontFamily="Lucida Calligraphy" FontSize="16" HorizontalContentAlignment="Center" />
+            <Button Background="#FF8CB4FF" 
                     DockPanel.Dock="Bottom" 
-                    Content="Add new Task"
-                    Command="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=DataContext.AddItemCommand}"/>
+                    Content="New task"
+                    Command="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=DataContext.AddItemCommand}" Foreground="White" FontFamily="Lucida Calligraphy" Height="42" BorderBrush="White"/>
 
             <ListView ItemsSource="{Binding Path=Items}"
                         SelectedItem="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=DataContext.SelectedItem}"
                       dd:DragDrop.IsDragSource="True"
                       dd:DragDrop.IsDropTarget="True"
-                      Background="#FFD6CDBC">
+                      Background="#FFBFDEFF" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="#FFFCFCFC" Foreground="White" FontFamily="Lucida Calligraphy">
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" 

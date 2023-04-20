@@ -52,5 +52,15 @@ namespace MyToDoList
             if (e.Key == Key.Enter)
                 EditTextBoxLostFocus(sender, e);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

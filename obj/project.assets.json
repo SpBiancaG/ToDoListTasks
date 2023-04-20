@@ -1,0 +1,190 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "gong-wpf-dragdrop/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "gong-wpf-dragdrop/3.1.1": {
+      "sha512": "giqs0jox1rVk7ZU2TQ8LbNOE5y4b7T5QR+Nlog9ULV56C/wkULnr4m0MzXHwUJkgoCaP2ytW629TEQhk0qOSrA==",
+      "type": "package",
+      "path": "gong-wpf-dragdrop/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "GongSolutions.Wpf.DragDrop.png",
+        "LICENSE",
+        "gong-wpf-dragdrop.3.1.1.nupkg.sha512",
+        "gong-wpf-dragdrop.nuspec",
+        "lib/net462/GongSolutions.WPF.DragDrop.dll",
+        "lib/net462/GongSolutions.WPF.DragDrop.xml",
+        "lib/net47/GongSolutions.WPF.DragDrop.dll",
+        "lib/net47/GongSolutions.WPF.DragDrop.xml",
+        "lib/net48/GongSolutions.WPF.DragDrop.dll",
+        "lib/net48/GongSolutions.WPF.DragDrop.xml",
+        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.dll",
+        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.xml",
+        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.dll",
+        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.xml",
+        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.dll",
+        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.xml"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "gong-wpf-dragdrop >= 3.1.1",
+      "newtonsoft.json >= 13.0.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\ToDoListTasks\\MyToDoList.csproj",
+      "projectName": "MyToDoList",
+      "projectPath": "C:\\Users\\User\\Desktop\\ToDoListTasks\\MyToDoList.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\ToDoListTasks\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "gong-wpf-dragdrop": {
+            "target": "Package",
+            "version": "[3.1.1, )"
+          },
+          "newtonsoft.json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.15, 6.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.15, 6.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.15, 6.0.15]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.15, 6.0.15]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
