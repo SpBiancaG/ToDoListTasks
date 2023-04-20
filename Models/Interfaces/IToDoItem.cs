@@ -24,5 +24,7 @@ namespace MyToDoList.Models.Interfaces
     {
         string Text { get; set; }
         bool IsCompleted { get; set; }
+
+        string Deadline { get; set; }
     }
 }

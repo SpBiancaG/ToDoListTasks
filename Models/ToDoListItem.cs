@@ -25,5 +25,7 @@ namespace MyToDoList.Models
     {
         public bool IsCompleted { get; set; } = false;
         public string Text { get; set; } = "New task";
+
+        public string Deadline { get; set; } = null;
     }
 }

@@ -5,12 +5,20 @@
       {
         "$type": "MyToDoList.Models.ToDoItem, MyToDoList",
         "IsCompleted": false,
-        "Text": "Mâncare la pisică"
+        "Text": "Mâncare la pisică",
+        "Deadline": "4/22/2023 12:00:00 AM"
       },
       {
         "$type": "MyToDoList.Models.ToDoItem, MyToDoList",
         "IsCompleted": false,
-        "Text": "Pâine"
+        "Text": "Pâine",
+        "Deadline": "4/4/2023 12:00:00 AM"
+      },
+      {
+        "$type": "MyToDoList.Models.ToDoItem, MyToDoList",
+        "IsCompleted": false,
+        "Text": "Lapte",
+        "Deadline": "6/14/2023 12:00:00 AM"
       }
     ],
     "Name": "Cumpăraturi"
@@ -21,7 +29,8 @@
       {
         "$type": "MyToDoList.Models.ToDoItem, MyToDoList",
         "IsCompleted": false,
-        "Text": "Descarcă muzică"
+        "Text": "Descarcă muzică",
+        "Deadline": "5/26/2023 12:00:00 AM"
       }
     ],
     "Name": "De făcut mai târziu"

@@ -48,6 +48,16 @@ namespace MyToDoList.ViewModels
             }
         }
 
+        public string Deadline
+        {
+            get => item.Deadline;
+            set
+            {
+                item.Deadline = value;
+                OnPropertyChanged("Deadline");
+            }
+        }
+
         public ToDoItemViewModel(IToDoItem item)
         {
             this.item = item;

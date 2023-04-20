@@ -226,6 +226,11 @@
                                              x:Name="EditTextBox"
                                              Text="{Binding Text,UpdateSourceTrigger=PropertyChanged}"
                                              Grid.Column="1"/>
+                                    <DatePicker Grid.Column="2" 
+                                                SelectedDate="{Binding Deadline, StringFormat='yyyy-MM-dd', UpdateSourceTrigger=PropertyChanged}" 
+                                                Margin="250,0,5,0" 
+                                                VerticalAlignment="Center"
+                                                 HorizontalAlignment="Right"/>
                                 </Grid>
                             </Border>
                             <StackPanel Grid.Column="3" 
