@@ -50,3 +50,5 @@ C:\Users\User\Desktop\To do lists\obj\Debug\net6.0-windows\refint\MyToDoList.dll
 C:\Users\User\Desktop\To do lists\obj\Debug\net6.0-windows\MyToDoList.pdb
 C:\Users\User\Desktop\To do lists\obj\Debug\net6.0-windows\MyToDoList.genruntimeconfig.cache
 C:\Users\User\Desktop\To do lists\obj\Debug\net6.0-windows\ref\MyToDoList.dll
+C:\Users\User\Desktop\ToDoListTasks\obj\Debug\net6.0-windows\Views\AboutWindow.g.cs
+C:\Users\User\Desktop\ToDoListTasks\obj\Debug\net6.0-windows\Views\AboutWindow.baml

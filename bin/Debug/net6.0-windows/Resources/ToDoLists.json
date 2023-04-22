@@ -34,5 +34,17 @@
       }
     ],
     "Name": "De făcut mai târziu"
+  },
+  {
+    "$type": "MyToDoList.Models.ToDoList, MyToDoList",
+    "Items": [
+      {
+        "$type": "MyToDoList.Models.ToDoItem, MyToDoList",
+        "IsCompleted": false,
+        "Text": "Lala",
+        "Deadline": "5/6/2023 12:00:00 AM"
+      }
+    ],
+    "Name": "Gătit"
   }
 ]

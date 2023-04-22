@@ -1,0 +1,45 @@
+[
+  {
+    "$type": "MyToDoList.Models.ToDoCategory, MyToDoList",
+    "Category": "My first category!",
+    "Lists": [
+      {
+        "$type": "MyToDoList.Models.ToDoList, MyToDoList",
+        "Items": [
+          {
+            "$type": "MyToDoList.Models.ToDoItem, MyToDoList",
+            "IsCompleted": false,
+            "Text": "My first task!",
+            "Deadline": null
+          }
+        ],
+        "Name": "My first to do list!"
+      }
+    ]
+  },
+  {
+    "$type": "MyToDoList.Models.ToDoCategory, MyToDoList",
+    "Category": null,
+    "Lists": []
+  },
+  {
+    "$type": "MyToDoList.Models.ToDoCategory, MyToDoList",
+    "Category": "Acasa",
+    "Lists": []
+  },
+  {
+    "$type": "MyToDoList.Models.ToDoCategory, MyToDoList",
+    "Category": null,
+    "Lists": []
+  },
+  {
+    "$type": "MyToDoList.Models.ToDoCategory, MyToDoList",
+    "Category": null,
+    "Lists": []
+  },
+  {
+    "$type": "MyToDoList.Models.ToDoCategory, MyToDoList",
+    "Category": null,
+    "Lists": []
+  }
+]

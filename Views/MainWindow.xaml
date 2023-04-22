@@ -108,6 +108,11 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+      
+
+
+
+
 
         <!-- Lists here-->
 
@@ -116,11 +121,18 @@
 
             <Label Background="#FF0025E6" 
                    DockPanel.Dock="Top" Content="My to do lists" HorizontalContentAlignment="Center" Foreground="White" FontFamily="Lucida Calligraphy" Height="32"/>
-            <Button Background="#FF8CB4FF"
-                    DockPanel.Dock="Bottom"
-                    FontFamily="Lucida Calligraphy"
-                    Content="New list"
-                    Command="{Binding AddListCommand}" Click="Button_Click" Foreground="White" BorderBrush="White" Height="40"/>
+            <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+                <Button Background="#FF8CB4FF"
+                FontFamily="Lucida Calligraphy"
+                Content="New list"
+                Command="{Binding AddListCommand}" Click="Button_Click" Foreground="White" BorderBrush="White" Height="40" Width="168"/>
+
+                <Menu>
+                    <MenuItem Header="ℹ" FontSize="20" Foreground="White" BorderThickness="1" Background="DarkBlue" BorderBrush="AntiqueWhite" Width="42" Click="MenuItem_Click" Height="41"  >
+                        <MenuItem Header="About" Background="LightBlue" Command="{Binding AboutCommand}"/>
+                    </MenuItem>
+                </Menu>
+            </StackPanel>
             <ListView ItemsSource="{Binding ToDoLists}" 
                           SelectedItem="{Binding SelectedList}"
                       dd:DragDrop.IsDragSource="True"

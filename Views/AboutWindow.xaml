@@ -1,0 +1,34 @@
+﻿<Window x:Class="MyToDoList.Views.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyToDoList.Views"
+        mc:Ignorable="d"
+        Title="AboutWindow" Height="240" Width="400">
+
+    <Grid Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <TextBlock Text="
+                   
+                   
+                   Name: Spataru Bianca Gabriela&#xA;&#xA;Group: G213" 
+           FontFamily="Lucida Calligraphy" 
+           FontWeight="SemiBold" 
+           FontSize="20" 
+                      
+           Foreground="DarkBlue" 
+           TextAlignment="Center" 
+           TextWrapping="Wrap" Height="283" 
+                       Background="Beige"
+           />
+
+
+        <Button Content="Ok"   Background="LightBlue"  FontFamily="Lucida Calligraphy" FontSize="20" Click="OkButtonClick" Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Top" Height="38" Width="100" Margin="0,142,0,0" BorderBrush="#FFFEFEFE" Foreground="#FF0015AA"/>
+    </Grid>
+</Window>

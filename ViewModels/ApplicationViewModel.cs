@@ -17,6 +17,8 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using MyToDoList.Views;
+
 public class ApplicationViewModel : INotifyPropertyChanged
 {
     #region Fields
@@ -120,6 +122,28 @@ public class ApplicationViewModel : INotifyPropertyChanged
     public void OnPropertyChanged([CallerMemberName] string prop = "")
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
+    }
+
+    private ICommand aboutCommand;
+    public ICommand AboutCommand
+    {
+        get
+        {
+            if (aboutCommand == null)
+            {
+                aboutCommand = new RelayCommand(About);
+            }
+            return aboutCommand;
+        }
+    }
+
+    public void About(object param)
+    {
+
+
+        AboutWindow aboutWindow = new AboutWindow();
+        aboutWindow.ShowDialog();
+
     }
 
 }
